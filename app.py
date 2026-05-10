@@ -13,8 +13,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-STORE   = os.getenv("SHOPIFY_STORE")
-TOKEN   = os.getenv("SHOPIFY_TOKEN")
+STORE = st.secrets.get("SHOPIFY_STORE", os.getenv("SHOPIFY_STORE"))
+TOKEN = st.secrets.get("SHOPIFY_TOKEN", os.getenv("SHOPIFY_TOKEN"))
 BASE    = f"https://{STORE}/admin/api/2024-01"
 HEADERS = {"X-Shopify-Access-Token": TOKEN}
 
