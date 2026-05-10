@@ -4,7 +4,7 @@ A prototype dashboard that tracks influencer performance for a Shopify e-commerc
 
 ## 🚀 Live Demo
 
-> _Link to deployed app (Streamlit Cloud)_
+> https://influencer-dashboard-demo.streamlit.app/
 
 ---
 
